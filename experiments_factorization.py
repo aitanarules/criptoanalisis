@@ -141,12 +141,12 @@ def main(verbose:bool = False):
             results.append(result)
             
             if verbose:
-                print(
-                    f"{name:18s} | "
-                    f"time = {result['time']:.4f}s | "
-                    f"memory = {result['memory_mb']:.2f} MB | "
-                    f"success = {result['success']}"
-                )
+            print(
+                f"{name:18s} | "
+                f"time = {result['time']:.4f}s | "
+                f"memory = {result['memory_mb']:.2f} MB | "
+                f"success = {result['success']}"
+            )
 
         save_results_csv(results, output)
 
